@@ -12,9 +12,12 @@
 		8D600071223DFFC100C3B81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D60006F223DFFC100C3B81A /* Main.storyboard */; };
 		8D600073223DFFC200C3B81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D600072223DFFC200C3B81A /* Assets.xcassets */; };
 		8D600076223DFFC200C3B81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D600074223DFFC200C3B81A /* LaunchScreen.storyboard */; };
+		998F41AF3AE3FDDC95929BAF /* Pods_RxCocoaHeads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACDA7ABE5A674AC8A539D4 /* Pods_RxCocoaHeads.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B93BAA2E30B7E9512D3241 /* Pods-RxCocoaHeads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaHeads.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxCocoaHeads/Pods-RxCocoaHeads.release.xcconfig"; sourceTree = "<group>"; };
+		67ACDA7ABE5A674AC8A539D4 /* Pods_RxCocoaHeads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxCocoaHeads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D600068223DFFC100C3B81A /* RxCocoaHeads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaHeads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D60006B223DFFC100C3B81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D60006D223DFFC100C3B81A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8D600072223DFFC200C3B81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D600075223DFFC200C3B81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D600077223DFFC200C3B81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7135A74195905277CDE86F /* Pods-RxCocoaHeads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaHeads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxCocoaHeads/Pods-RxCocoaHeads.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998F41AF3AE3FDDC95929BAF /* Pods_RxCocoaHeads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				8D60006A223DFFC100C3B81A /* RxCocoaHeads */,
 				8D600069223DFFC100C3B81A /* Products */,
+				C2DB06BBA34B0DB891EDF54A /* Pods */,
+				A545090AD5CC6C30D32AF3D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = RxCocoaHeads;
 			sourceTree = "<group>";
 		};
+		A545090AD5CC6C30D32AF3D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67ACDA7ABE5A674AC8A539D4 /* Pods_RxCocoaHeads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2DB06BBA34B0DB891EDF54A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7135A74195905277CDE86F /* Pods-RxCocoaHeads.debug.xcconfig */,
+				11B93BAA2E30B7E9512D3241 /* Pods-RxCocoaHeads.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D60007A223DFFC200C3B81A /* Build configuration list for PBXNativeTarget "RxCocoaHeads" */;
 			buildPhases = (
+				AB10B16F02298DB51E9507D7 /* [CP] Check Pods Manifest.lock */,
 				8D600064223DFFC100C3B81A /* Sources */,
 				8D600065223DFFC100C3B81A /* Frameworks */,
 				8D600066223DFFC100C3B81A /* Resources */,
+				6EE68FE9F5CB62856EC358E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EE68FE9F5CB62856EC358E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxCocoaHeads/Pods-RxCocoaHeads-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxCocoaHeads/Pods-RxCocoaHeads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB10B16F02298DB51E9507D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxCocoaHeads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D600064223DFFC100C3B81A /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		8D60007B223DFFC200C3B81A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7135A74195905277CDE86F /* Pods-RxCocoaHeads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		8D60007C223DFFC200C3B81A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B93BAA2E30B7E9512D3241 /* Pods-RxCocoaHeads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
