@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D45D467223EE5A100A161E7 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45D466223EE5A100A161E7 /* MediaViewController.swift */; };
+		8D45D469223EE5C600A161E7 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45D468223EE5C600A161E7 /* MediaViewModel.swift */; };
+		8D45D46C224807F500A161E7 /* MediaSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45D46B224807F500A161E7 /* MediaSearchResult.swift */; };
+		8D45D46E224808A700A161E7 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45D46D224808A700A161E7 /* Media.swift */; };
+		8D45D47022480A9C00A161E7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45D46F22480A9C00A161E7 /* NetworkManager.swift */; };
 		8D60006C223DFFC100C3B81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60006B223DFFC100C3B81A /* AppDelegate.swift */; };
-		8D60006E223DFFC100C3B81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60006D223DFFC100C3B81A /* ViewController.swift */; };
-		8D600071223DFFC100C3B81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D60006F223DFFC100C3B81A /* Main.storyboard */; };
 		8D600073223DFFC200C3B81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D600072223DFFC200C3B81A /* Assets.xcassets */; };
 		8D600076223DFFC200C3B81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D600074223DFFC200C3B81A /* LaunchScreen.storyboard */; };
 		998F41AF3AE3FDDC95929BAF /* Pods_RxCocoaHeads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACDA7ABE5A674AC8A539D4 /* Pods_RxCocoaHeads.framework */; };
@@ -18,10 +21,13 @@
 /* Begin PBXFileReference section */
 		11B93BAA2E30B7E9512D3241 /* Pods-RxCocoaHeads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaHeads.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxCocoaHeads/Pods-RxCocoaHeads.release.xcconfig"; sourceTree = "<group>"; };
 		67ACDA7ABE5A674AC8A539D4 /* Pods_RxCocoaHeads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxCocoaHeads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D45D466223EE5A100A161E7 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		8D45D468223EE5C600A161E7 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
+		8D45D46B224807F500A161E7 /* MediaSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSearchResult.swift; sourceTree = "<group>"; };
+		8D45D46D224808A700A161E7 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		8D45D46F22480A9C00A161E7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8D600068223DFFC100C3B81A /* RxCocoaHeads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaHeads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D60006B223DFFC100C3B81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D60006D223DFFC100C3B81A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D600070223DFFC100C3B81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D600072223DFFC200C3B81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D600075223DFFC200C3B81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D600077223DFFC200C3B81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D45D46A224807DD00A161E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D45D46B224807F500A161E7 /* MediaSearchResult.swift */,
+				8D45D46D224808A700A161E7 /* Media.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8D60005F223DFFC100C3B81A = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				8D60006B223DFFC100C3B81A /* AppDelegate.swift */,
-				8D60006D223DFFC100C3B81A /* ViewController.swift */,
-				8D60006F223DFFC100C3B81A /* Main.storyboard */,
 				8D600072223DFFC200C3B81A /* Assets.xcassets */,
-				8D600074223DFFC200C3B81A /* LaunchScreen.storyboard */,
 				8D600077223DFFC200C3B81A /* Info.plist */,
+				8D600074223DFFC200C3B81A /* LaunchScreen.storyboard */,
+				8D45D466223EE5A100A161E7 /* MediaViewController.swift */,
+				8D45D468223EE5C600A161E7 /* MediaViewModel.swift */,
+				8D45D46A224807DD00A161E7 /* Models */,
+				8D45D46F22480A9C00A161E7 /* NetworkManager.swift */,
 			);
 			path = RxCocoaHeads;
 			sourceTree = "<group>";
@@ -150,7 +167,6 @@
 			files = (
 				8D600076223DFFC200C3B81A /* LaunchScreen.storyboard in Resources */,
 				8D600073223DFFC200C3B81A /* Assets.xcassets in Resources */,
-				8D600071223DFFC100C3B81A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,22 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D60006E223DFFC100C3B81A /* ViewController.swift in Sources */,
+				8D45D47022480A9C00A161E7 /* NetworkManager.swift in Sources */,
 				8D60006C223DFFC100C3B81A /* AppDelegate.swift in Sources */,
+				8D45D469223EE5C600A161E7 /* MediaViewModel.swift in Sources */,
+				8D45D467223EE5A100A161E7 /* MediaViewController.swift in Sources */,
+				8D45D46C224807F500A161E7 /* MediaSearchResult.swift in Sources */,
+				8D45D46E224808A700A161E7 /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D60006F223DFFC100C3B81A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D600070223DFFC100C3B81A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D600074223DFFC200C3B81A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXBS78USJQ;
 				INFOPLIST_FILE = RxCocoaHeads/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXBS78USJQ;
 				INFOPLIST_FILE = RxCocoaHeads/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
