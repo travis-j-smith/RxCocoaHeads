@@ -1,0 +1,6 @@
+framework module Pods_RxCocoaHeads {
+  umbrella header "Pods-RxCocoaHeads-umbrella.h"
+
+  export *
+  module * { export * }
+}
